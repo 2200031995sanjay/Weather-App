@@ -36,11 +36,11 @@ export default function WeatherApp() {
 
 
   return (
-    <div className="p-4 max-w-md mx-auto text-center bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg">
-      <h1 className="text-2xl font-bold mb-4 text-black dark:text-white">Weather App</h1>
+    <div className="p-6 max-w-md mx-auto text-center bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border-2 border-gray-300 dark:border-gray-700">
+      <h1 className="text-3xl font-extrabold mb-6 text-gray-900 dark:text-white">Weather App</h1>
       <WeatherSearch city={city} setCity={setCity} fetchWeather={fetchWeather} />
       {loading && <p className="mt-4 text-gray-500">Loading....</p>}
-      {error && <p className="mt-4 text-red-500">{error}</p>}
+      {error && <p className="mt-4 text-red-500 font-semibold">{error}</p>}
       {weather && <WeatherDisplay weather={weather} />}
       
       </div>
